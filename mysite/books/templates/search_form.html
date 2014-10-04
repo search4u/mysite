@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Search</title>
+	</head>
+	<body>
+		{% if errors %}
+		<ul>
+			{% for error in errors %}
+			<li style="color:red;">{{error}} </li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		<form action="" method="get">
+			<table>
+				<tr>
+					<td><p>user</p></td>
+					<td><input type="text" name="user"></td>
+				</tr>	
+				<tr>
+					<td><p>bookname</p></td>
+					<td><input type="text" name="q"></td>
+				</tr>	
+				<tr>
+					<td><input type="submit" value="Search"></td>
+				</tr>	
+			</table>
+		</form>
+	</body>	
+</html>
